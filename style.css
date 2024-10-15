@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+.stickyNav {
+  position: sticky;
+  top: 0;
+}
+.blurNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 30%);
+  backdrop-filter: blur(10px);
+}
+.topNav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+.topNav li {
+  padding: 20px 40px;
+}
+.topNav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin: 10px 20px;
+  padding: 15px 20px;
+}
+.topNav li > a:hover {
+  background-color: rgba(70, 143, 123, 0.3);
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px rgba(135, 255, 223, 0.5);
+}
+.headerImage img {
+  object-fit: cover;
+}
+.portraitContainer {
+  display: flex;
+  justify-content: center;
+  margin: 80px auto 0;
+  max-width: 900px;
+}
+.blurredImage {
+  position: relative;
+  margin-right: 80px;
+  z-index: -1;
+}
+.blurredImage:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 10px 20px rgb(18, 18, 18);
+}
+
+.portraitContainer p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 215px;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.intro {
+  max-width: 900px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+.intro h1 {
+  font-family: "Danfo", serif;
+  font-size: 3rem;
+}
+.intro p {
+  font-size: 1rem;
+  font-family: "DM Serif Text", serif;
+}
+.biographySection {
+  margin: 200px auto 0;
+}
+.biographySection h2 {
+  font-size: 2rem;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.biographySectionContent {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+.textContainer {
+  padding: 20px 50px;
+}
+
+.textContainer p {
+  font-family: "DM Serif Text", serif;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.biographySection img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0 30%;
+  flex-shrink: 0;
+  margin: 90px 20px;
+  box-shadow: 0px 0px 90px rgba(190, 82, 5, 0.556);
+}
+.firstOscarSection {
+  max-width: 900px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+.firstOscarSection h2 {
+  position: relative;
+  z-index: -1;
+  font-size: 2rem;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+.firstOscarSection h2 > span {
+  filter: invert(41%) sepia(54%) saturate(4644%) hue-rotate(14deg)
+    brightness(101%) contrast(99%);
+}
+.firstOscarContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.firstOscarContent p {
+  font-family: "DM Serif Text", serif;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.firstOscarContent img {
+  object-fit: cover;
+  margin: 50px 100px 85px 0px;
+}
+.filmsSection {
+  max-width: 900px;
+  margin: 100px auto 0;
+}
+.filmsSection h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.filmsSection img {
+  object-fit: cover;
+  max-width: 900px;
+  object-position: 10% 10%;
+  margin-top: 50px;
+}
+.filmsSection ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 50px;
+}
+.filmsSection ul > li {
+  list-style-image: url("./tribute-page-photo/gun2.svg");
+  font-size: 1.5rem;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  padding: 20px 0;
+  width: 40%;
+}
+.filmsSection ul > li::marker {
+  font-size: 4rem;
+}
+.factsSection h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 150px auto 100px;
+}
+.factsSection h3 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.factsSection p {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  font-family: "DM Serif Text", serif;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 30px;
+}
+.factsSpan {
+  font-family: "Bungee Spice", sans-serif;
+}
+.footerSection {
+  text-align: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.393);
+  max-width: 100%;
+  margin-top: 100px;
+  padding: 50px 400px;
+}
+.footerSection p,
+.footerSection a {
+  font-size: 1.3rem;
+  font-family: "Cormorant", serif;
+}
+.footerSection p a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.scrollUp {
+  position: absolute;
+  top: 33%;
+  right: 100px;
+}
+.scrollUp:hover svg {
+  box-shadow: 0px -15px 10px rgba(135, 255, 221, 0.058);
+  border-radius: 50%;
+}
